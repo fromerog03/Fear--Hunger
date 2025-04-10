@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Personaje</title>
+    <link rel="stylesheet" href="CrearPersonaje.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selecciona tu Personaje</h1>
+        <div class="personajes">
+            <div class="personaje">
+                <img src="imagenes/d_arce.png" alt="D'arce">
+                <h2>D'arce</h2>
+                <p>Nivel: 1</p>
+                <p>Vida: 100</p>
+                <p>Ataque: 12</p>
+                <p>Defensa: 6</p>
+                <p>Velocidad: 5</p>
+                <button onclick="redirigirPagina('D_arce.html')">Seleccionar</button>
+            </div>
+            <div class="personaje">
+                <img src="imagenes/enki.png" alt="Enki Ankarian">
+                <h2>Enki Ankarian</h2>
+                <p>Nivel: 1</p>
+                <p>Vida: 80</p>
+                <p>Ataque: 15</p>
+                <p>Defensa: 4</p>
+                <p>Velocidad: 7</p>
+                <button onclick="redirigirPagina('Enki.html')">Seleccionar</button>
+            </div>
+            <div class="personaje">
+                <img src="imagenes/cahara.png" alt="Cahara">
+                <h2>Cahara</h2>
+                <p>Nivel: 1</p>
+                <p>Vida: 90</p>
+                <p>Ataque: 10</p>
+                <p>Defensa: 5</p>
+                <p>Velocidad: 8</p>
+                <button onclick="redirigirPagina('Cahara.html')">Seleccionar</button>
+            </div>
+            <div class="personaje">
+                <img src="imagenes/ragnvaldr.png" alt="Ragnvaldr">
+                <h2>Ragnvaldr</h2>
+                <p>Nivel: 1</p>
+                <p>Vida: 120</p>
+                <p>Ataque: 10</p>
+                <p>Defensa: 8</p>
+                <p>Velocidad: 4</p>
+                <button onclick="redirigirPagina('Ragnvaldr.html')">Seleccionar</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirigirPagina(pagina) {
+            window.location.href = pagina; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', serif;
+    background-image: url('imagenes/fondoInventario.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    width: 80%;
+    max-width: 800px;
+}
+
+.container h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #ffd700;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+.inventario {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.objeto {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.imagen-objeto {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.objeto h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ffd700;
+}
+
+.boton-equipar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-equipar.equipado {
+    background-color: #c33427;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #FFD700;
+}
+
+.objeto.equipado {
+    border: 2px solid #FFD700;
+    background-color: #333333;
+    color: #FFD700;
+}
+
+.mensaje-vacio {
+    font-size: 14px;
+    color: #d4d4d4;
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+.objeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+}
+
+.boton-lobby {
+    margin-top: 20px;
+    background-color: #5a3d2b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+}
+
+.boton-lobby:hover {
+    background-color: #7a523d;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+}

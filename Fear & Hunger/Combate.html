@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combate</title>
+    <link rel="stylesheet" href="Combate.css">
+    <script type="module" src="Combate.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="parte-superior">
+            <div class="personaje">
+                <img id="imagen-jugador" alt="Imagen del jugador">
+                <div class="barra-vida">
+                    <div id="vida-jugador" class="vida"></div>
+                </div>
+            </div>
+            <div class="enemigo">
+                <img id="imagen-enemigo" alt="Imagen del enemigo">
+                <div class="barra-vida">
+                    <div id="vida-enemigo" class="vida"></div>
+                </div>
+            </div>
+        </div>
+        <div class="parte-inferior">
+            <div class="menu-acciones">
+                <button id="boton-atacar" class="boton-accion">Atacar</button>
+                <button id="boton-defender" class="boton-accion">Defender</button>
+                <button id="boton-huir" class="boton-accion">Huir</button>
+            </div>
+            <div class="estadisticas">
+                <h3>Vida: <span id="vida-jugador-texto">100</span></h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

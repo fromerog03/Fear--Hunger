@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="Tienda.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Elige tu Vendedor</h1>
+        <div class="vendedores">
+            <div class="vendedor">
+                <img src="imagenes/isayah.png" alt="Isayah">
+                <h2>Isayah</h2>
+                <p>Un misterioso comerciante que siempre tiene algo interesante que ofrecer.</p>
+                <button onclick="seleccionarVendedor('Isayah')">Seleccionar</button>
+            </div>
+            <div class="vendedor">
+                <img src="imagenes/pocketcat.png" alt="Pocketcat">
+                <h2>Pocketcat</h2>
+                <p>Una criatura enigmática con objetos únicos y extraños.</p>
+                <button onclick="seleccionarVendedor('Pocketcat')">Seleccionar</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function seleccionarVendedor(vendedor) {
+            // Guardar el vendedor seleccionado en localStorage
+            localStorage.setItem('vendedorSeleccionado', vendedor);
+            // Redirigir a la página de la tienda de objetos
+            window.location.href = "TienaObjeto.html";
+        }
+    </script>
+</body>
+</html>

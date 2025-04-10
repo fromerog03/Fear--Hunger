@@ -1,0 +1,58 @@
+body {
+    background-image: url("imagenes/Fear%20&%20Hunger.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    font-family: 'Times New Roman', serif;
+    color: #fff;
+    background-color: #000;
+    padding-right: 50px; 
+}
+
+.menu-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border: 2px solid #5a0a0a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(90, 10, 10, 0.7);
+    margin-right: 70px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 15px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #5a0a0a;
+    background-color: rgba(90, 10, 10, 0.5);
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  
+}
+
+.menu a:hover {
+    background-color: #5a0a0a;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(90, 10, 10, 0.7);
+}
